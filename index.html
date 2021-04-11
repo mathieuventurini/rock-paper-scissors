@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  
+  <title>Rock, Paper, Scissors</title>
+
+
+</head>
+
+<body>
+
+  <div class="mainpage">
+
+          <div class="top-bloc">
+
+              <div class="title">
+                  <p id="rock-title">ROCK</p>
+                  <p id="paper-title">PAPER</p>
+                  <p id="scissors-title">SCISSORS</p>
+              </div>
+
+          <div class="score">
+                  <p id="score">S C O R E</p>
+
+              <div class="counter-player">
+                <p class="player1">Player</p>
+                <p class="player2">Computer</p>
+              </div>
+
+
+              <div class="counter">
+                  <p class="score-value player-score"></p>
+                  <p class="score-value computer-score"></p>
+              </div>
+              </div>
+
+          </div>
+
+
+          <div class="symbols">
+            <button class="circles paper-circle" id="paper"><img class="paperimg"  src="images/icon-paper.svg" alt="paper"></button>
+            <button class="circles scissors-circle" id="scissors"><img src="images/icon-scissors.svg" alt="scissors"></button>
+            <button class="circles rock-circle" id="rock"><img src="images/icon-rock.svg" alt="rock"></button>
+          </div>
+
+          <div class="picked">
+
+                <p id="user-picked-title">YOU PICKED</p>
+                  <div class="circles paper-circle symbol-picked paperpicked"><img class="paperimg"  src="images/icon-paper.svg" alt="paper"></div>
+                  <div class="circles scissors-circle symbol-picked scissorspicked"><img src="images/icon-scissors.svg" alt="scissors"></div>
+                  <div class="circles rock-circle symbol-picked rockpicked"><img src="images/icon-rock.svg" alt="rock"></div>
+                <p id="computer-picked-title">THE COMPUTER PICKED</p>
+
+                <div class="circles paper-circle symbol-picked paperpicked computer-paper"><img class="paperimg"  src="images/icon-paper.svg" alt="paper"></div>
+                <div class="circles scissors-circle symbol-picked scissorspicked computer-scissors"><img src="images/icon-scissors.svg" alt="scissors"></div>
+                <div class="circles rock-circle symbol-picked rockpicked computer-rock"><img src="images/icon-rock.svg" alt="rock"></div>
+                
+          </div>
+
+          <div class="winnertable">
+
+            <div class="text-part">
+                <p id="winner">YOU WIN !</p>
+                <p id="looser">YOU LOSE :(</p>
+                <p id="draw">DRAW</p>
+            </div>
+            <button class="restart">PLAY AGAIN</button>
+
+          </div>
+         
+
+
+
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
